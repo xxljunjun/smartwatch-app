@@ -1,10 +1,13 @@
 <template>
-  <view class="device"></view>
+  <view class="device">2222222222222<TabBar current="device" /></view>
 </template>
 
 <script>
+import TabBar from '@/pages/component/tabBar.vue'
 export default {
-  components: {},
+  components: {
+    TabBar,
+  },
   data() {
     return {}
   },

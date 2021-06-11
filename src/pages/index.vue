@@ -1,6 +1,7 @@
 <template>
   <view>
-    <TabBar />
+    11111111111111
+    <TabBar current="index" />
   </view>
 </template>
 
