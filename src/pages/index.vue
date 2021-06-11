@@ -1,18 +1,26 @@
 <template>
   <view>
-    11111111111111
+    <Top title="Home" :isAdd="true" />
+    <view v-if="hasData"></view>
+    <view v-else>
+      <image src="/static/icons/nodata.png" class="nodata" />
+    </view>
     <TabBar current="index" />
   </view>
 </template>
 
 <script>
 import TabBar from '@/pages/component/tabBar.vue'
+import Top from '@/pages/component/top.vue'
 export default {
   data() {
-    return {}
+    return {
+      hasData: false,
+    }
   },
   components: {
     TabBar,
+    Top,
   },
 }
 </script>

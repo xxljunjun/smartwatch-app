@@ -25,7 +25,7 @@
         v-if="current === 'device'"
       />
       <image src="/static/icons/gong.png" class="imgs" v-else />
-      <view class="txt">Device</view>
+      <view class="txt">Tools</view>
     </view>
 
     <view
@@ -89,6 +89,7 @@ export default {
 .tabBar {
   position: fixed;
   bottom: 0;
+  left: 0;
   height: 100rpx;
   width: 100%;
   background-image: linear-gradient(180deg, #f2f2f2 0%, #d3d3d3 100%);
