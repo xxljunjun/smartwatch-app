@@ -140,3 +140,12 @@ Vue.use(VueRouter)
             }
         }
     }
+
+# 十、解决用户栏与顶部栏重合问题
++ 在manifest.json中
+ "app-plus": {
+        /* 导航栏和状态栏重叠问题 */
+        "statusbar": {
+            "immersed": false
+        },
+	}
