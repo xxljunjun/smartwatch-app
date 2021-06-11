@@ -1,11 +1,10 @@
 <template>
-  <view class="buy">11111111<TabBar /></view>
+  <view class="device"></view>
 </template>
 
 <script>
-import TabBar from '@/pages/component/tabBar-buttom'
 export default {
-  components: { TabBar },
+  components: {},
   data() {
     return {}
   },
@@ -14,6 +13,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.buy {
+.device {
 }
 </style>

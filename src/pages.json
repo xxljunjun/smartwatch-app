@@ -9,23 +9,7 @@
 			}
 		},
 		{
-			"path": "pages/buy",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
-		},
-		{
-			"path": "pages/sell",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
-		},
-		{
-			"path": "pages/message",
+			"path": "pages/device",
 			"style": {
 				"navigationStyle": "custom",
 				"animationDuration": 100,
