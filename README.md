@@ -149,3 +149,8 @@ Vue.use(VueRouter)
             "immersed": false
         },
 	}
+# 十一、封装tabBar组件
++ 利用父子组件传值控制路由跳转时tabBar的class类名的变化实现切换效果
++ uniapp的获取路由的方法
+	let routes = getCurrentPages() // 获取当前打开过的页面路由数组
+    let curRoute = routes[routes.length - 1].route // 获取当前页面路由，也就是最后一个打开的页面路由
