@@ -1,10 +1,13 @@
 <template>
   <view class="home">
     <Top title="Home" :isAdd="true" />
-    <view v-if="hasData" class="hasdata"></view>
+    <view v-if="hasData" class="hasdata">
+      <Smart />
+      <Car />
+    </view>
     <view v-else class="nodatabox">
       <image src="/static/icons/nodata.png" class="nodata" />
-      <text>无内容</text>
+      <text class="notext">无内容</text>
     </view>
     <TabBar current="index" />
   </view>
@@ -13,18 +16,59 @@
 <script>
 import TabBar from '@/pages/component/tabBar.vue'
 import Top from '@/pages/component/top.vue'
+import Smart from '@/pages/component/home/smart.vue'
+import Car from '@/pages/component/home/car.vue'
 export default {
   data() {
     return {
-      hasData: false,
+      hasData: true,
     }
   },
   components: {
     TabBar,
     Top,
+    Smart,
+    Car,
   },
 }
 </script>
 
 <style lang="scss" scoped>
+uni-page-body {
+  height: 100%;
+}
+.home {
+  position: relative;
+  margin-top: 96rpx;
+  padding-bottom: 100rpx;
+  background: #ccc;
+  .hasdata {
+  }
+  .nodatabox {
+    position: absolute;
+    width: 200rpx;
+    height: 200rpx;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .nodata {
+      height: 136rpx;
+      width: 136rpx;
+    }
+    .notext {
+      font-size: 30rpx;
+      color: #888888;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 30rpx;
+    }
+  }
+}
 </style>
