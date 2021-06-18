@@ -39,7 +39,7 @@ uni-page-body {
 }
 .home {
   position: relative;
-  margin-top: 96rpx;
+  padding-top: 76rpx;
   padding-bottom: 100rpx;
   background: #ccc;
   .hasdata {

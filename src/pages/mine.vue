@@ -21,5 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 .mine {
+  padding-top: 76rpx;
 }
 </style>
