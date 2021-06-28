@@ -39,6 +39,14 @@
 				"animationDuration": 100,
 				"animationType": "none"
 			}
+		},
+		{
+			"path": "pages/component/home/guid",
+			"style": {
+				"navigationStyle": "custom",
+				"animationDuration": 100,
+				"animationType": "none"
+			}
 		}
 	],
 	"globalStyle": {
