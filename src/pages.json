@@ -23,6 +23,22 @@
 				"animationDuration": 100,
 				"animationType": "none"
 			}
+		},
+		{
+			"path": "pages/component/home/addMachine",
+			"style": {
+				"navigationStyle": "custom",
+				"animationDuration": 100,
+				"animationType": "none"
+			}
+		},
+		{
+			"path": "pages/component/home/help",
+			"style": {
+				"navigationStyle": "custom",
+				"animationDuration": 100,
+				"animationType": "none"
+			}
 		}
 	],
 	"globalStyle": {

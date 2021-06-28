@@ -9,6 +9,7 @@
       <image src="/static/icons/nodata.png" class="nodata" />
       <text class="notext">无内容</text>
     </view>
+    <Tips :hasData="hasData" />
     <TabBar current="index" />
   </view>
 </template>
@@ -18,6 +19,7 @@ import TabBar from '@/pages/component/tabBar.vue'
 import Top from '@/pages/component/top.vue'
 import Smart from '@/pages/component/home/smart.vue'
 import Car from '@/pages/component/home/car.vue'
+import Tips from '@/pages/component/home/tips.vue'
 export default {
   data() {
     return {
@@ -29,6 +31,7 @@ export default {
     Top,
     Smart,
     Car,
+    Tips,
   },
 }
 </script>
@@ -45,9 +48,10 @@ uni-page-body {
   .hasdata {
   }
   .nodatabox {
-    position: absolute;
+    position: fixed;
     width: 200rpx;
     height: 200rpx;
+    z-index: 9;
     top: 0;
     right: 0;
     left: 0;

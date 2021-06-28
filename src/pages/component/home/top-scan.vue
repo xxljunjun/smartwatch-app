@@ -6,8 +6,12 @@
     <view class="middle">
       {{ title }}
     </view>
-    <view class="right" v-if="isAdd">
-      <image src="/static/icons/add.png" class="add" @click="goToAdd" />
+    <view class="right" v-if="isScan">
+      <image
+        src="/static/icons/question.png"
+        class="question"
+        @click="goToHelp"
+      />
     </view>
   </view>
 </template>
@@ -21,9 +25,9 @@ export default {
     },
     isBack: {
       type: Boolean,
-      default: false,
+      default: true,
     },
-    isAdd: {
+    isScan: {
       type: Boolean,
       default: false,
     },
@@ -37,9 +41,10 @@ export default {
         delta: 1,
       })
     },
-    goToAdd() {
+    goToHelp() {
+      console.log('22222222')
       uni.navigateTo({
-        url: '/pages/component/home/addMachine',
+        url: '/pages/component/home/help',
       })
     },
   },
@@ -51,7 +56,7 @@ export default {
 .top {
   height: 76rpx;
   width: 100%;
-  background-image: linear-gradient(180deg, #f2f2f2 0%, #d3d3d3 100%);
+  //   background-image: linear-gradient(180deg, #f2f2f2 0%, #d3d3d3 100%);
   box-shadow: inset 0 2px 0 0 #d2d2d2;
   position: fixed;
   top: 0;
@@ -72,14 +77,19 @@ export default {
     }
   }
   .middle {
+    color: #fff;
   }
   .right {
     position: absolute;
-    top: 5rpx;
+    top: 15rpx;
     right: 30rpx;
     .add {
       height: 64rpx;
       width: 64rpx;
+    }
+    .question {
+      height: 44rpx;
+      width: 44rpx;
     }
   }
 }
