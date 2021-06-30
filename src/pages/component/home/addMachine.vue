@@ -73,8 +73,8 @@ export default {
       align-items: center;
       .img_box {
         .smart-img {
-          // height: 192rpx;
           width: 192rpx;
+          height: 230rpx;
         }
       }
       .text_box {

@@ -47,6 +47,7 @@ export default {
     justify-content: center;
     .smart-img {
       height: 422rpx;
+      width: 320rpx;
     }
   }
 }

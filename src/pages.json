@@ -55,6 +55,14 @@
 				"animationDuration": 100,
 				"animationType": "none"
 			}
+		},
+		{
+			"path": "pages/component/home/healthy/sport",
+			"style": {
+				"navigationStyle": "custom",
+				"animationDuration": 100,
+				"animationType": "none"
+			}
 		}
 	],
 	"globalStyle": {
