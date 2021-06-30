@@ -1,4 +1,4 @@
-# sellgm
+# smartwatch
 
 ## Project setup
 ```
