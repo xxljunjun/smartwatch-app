@@ -1,5 +1,5 @@
 <template>
-  <view class="smart">
+  <view class="smart" @click="goToPage">
     <view class="mytop">
       <view class="lines myone">
         <view class="myleft">智能手表</view>
@@ -30,12 +30,7 @@
       </view>
     </view>
     <view class="botm">
-      <view
-        class="box"
-        v-for="(item, index) in iconArr"
-        :key="index"
-        @click="goToPage(item.id)"
-      >
+      <view class="box" v-for="(item, index) in iconArr" :key="index">
         <view class="img-box">
           <image :src="item.src" class="small-icon" />
         </view>
@@ -72,10 +67,9 @@ export default {
     }
   },
   methods: {
-    goToPage(id) {
-      console.log(id)
+    goToPage() {
       uni.navigateTo({
-        url: '/pages/component/home/healthy/sport',
+        url: '/pages/component/home/healthy/healthy',
       })
     },
   },
@@ -98,6 +92,7 @@ export default {
   margin: 20rpx;
   background: #ebebeb;
   border-radius: 20rpx;
+  font-size: 32rpx;
   .mytop {
     height: 430rpx;
     background: #ed7137;
@@ -113,7 +108,7 @@ export default {
       color: #fff;
     }
     .myone {
-      margin-bottom: 38rpx;
+      margin-bottom: 68rpx;
     }
     .mytwo {
       margin-bottom: 38rpx;
@@ -153,6 +148,8 @@ export default {
         }
         .txt-2 {
           margin-bottom: 5rpx;
+          font-size: 28rpx;
+          color: #555555;
         }
       }
     }

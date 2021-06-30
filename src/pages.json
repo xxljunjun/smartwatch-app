@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"path": "pages/component/home/healthy/sport",
+			"path": "pages/component/home/healthy/healthy",
 			"style": {
 				"navigationStyle": "custom",
 				"animationDuration": 100,
