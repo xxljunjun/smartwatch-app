@@ -55,6 +55,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/deep/uni-slider {
+  margin: 0;
+}
+/deep/.uni-slider-handle-wrapper {
+  height: 12rpx;
+}
+/deep/.uni-slider-thumb {
+  display: none;
+}
 .sport {
   padding-top: 76rpx;
   .mytop {
