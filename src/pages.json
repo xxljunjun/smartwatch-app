@@ -63,6 +63,14 @@
 				"animationDuration": 100,
 				"animationType": "none"
 			}
+		},
+		{
+			"path": "pages/component/device/dial",
+			"style": {
+				"navigationStyle": "custom",
+				"animationDuration": 100,
+				"animationType": "none"
+			}
 		}
 	],
 	"globalStyle": {

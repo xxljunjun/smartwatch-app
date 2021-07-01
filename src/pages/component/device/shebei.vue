@@ -41,7 +41,15 @@ export default {
   },
   methods: {
     goToPage(id) {
-      console.log(id)
+      var url = ''
+      switch (id) {
+        case 1:
+          url = '/pages/component/device/dial'
+          break
+      }
+      uni.navigateTo({
+        url: url,
+      })
     },
   },
   components: {

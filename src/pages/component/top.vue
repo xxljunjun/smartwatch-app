@@ -51,7 +51,8 @@ export default {
 .top {
   height: 76rpx;
   width: 100%;
-  background-image: linear-gradient(180deg, #f2f2f2 0%, #d3d3d3 100%);
+  // background-image: linear-gradient(180deg, #f2f2f2 0%, #d3d3d3 100%);
+  background: #f5f5f5;
   box-shadow: inset 0 2px 0 0 #d2d2d2;
   position: fixed;
   top: 0;
