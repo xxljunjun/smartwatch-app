@@ -40,18 +40,18 @@
 </template>
 
 <script>
-import Top from '@/pages/component/top.vue'
+import Top from "@/pages/component/top.vue";
 export default {
   data() {
     return {
       sliderNum: 50,
-    }
+    };
   },
   methods: {},
   components: {
     Top,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -122,6 +122,8 @@ export default {
         margin-top: 20rpx;
         .de-img {
           height: 110rpx;
+          width: 200rpx;
+          height: 200rpx;
         }
       }
       .mi {
