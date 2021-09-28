@@ -15,16 +15,22 @@
 </template>
 
 <script>
-import TabBar from '@/pages/component/tabBar.vue'
-import Top from '@/pages/component/top.vue'
-import Smart from '@/pages/component/home/smart.vue'
-import Car from '@/pages/component/home/car.vue'
-import Tips from '@/pages/component/home/tips.vue'
+import TabBar from "@/pages/component/tabBar.vue";
+import Top from "@/pages/component/top.vue";
+import Smart from "@/pages/component/home/smart.vue";
+import Car from "@/pages/component/home/car.vue";
+import Tips from "@/pages/component/home/tips.vue";
+// import axios from "axios";
+const Mock = require("mockjs");
+import { fetchData } from "@/serve/api.js";
 export default {
   data() {
     return {
       hasData: true,
-    }
+    };
+  },
+  mounted() {
+    this.getFetchData();
   },
   components: {
     TabBar,
@@ -33,7 +39,18 @@ export default {
     Car,
     Tips,
   },
-}
+  methods: {
+    getFetchData() {
+      fetchData().then((res) => {
+        console.log("1111", res);
+        Mock.mock("http://localhost:8080/api/xxl/mock", "get", {
+          aa: 11,
+        });
+        console.log("2222", res);
+      });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

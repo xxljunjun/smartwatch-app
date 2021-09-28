@@ -154,3 +154,11 @@ export default store
 - uniapp 的获取路由的方法
   let routes = getCurrentPages() // 获取当前打开过的页面路由数组
   let curRoute = routes[routes.length - 1].route // 获取当前页面路由，也就是最后一个打开的页面路由
+
+### 十、mock 数据组件的使用
+
+```
+Mock.mock("http://localhost:8080/api/xxl/mock", "get", {
+  aa: 11,
+});
+```

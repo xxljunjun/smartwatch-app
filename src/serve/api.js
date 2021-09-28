@@ -8,3 +8,11 @@ export function getWeather(params) {
 		method: 'GET',
 	})
 }
+
+//模拟mock数据
+export function fetchData() {
+	return request({
+		url: `/api/xxl/mock`,
+		method: 'GET',
+	})
+}
